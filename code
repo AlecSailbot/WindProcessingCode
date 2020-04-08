@@ -1,0 +1,15 @@
+import numpy as np
+
+raw_wind_data = [] #rename raw_wind_data to whatever variable wind data comes in as
+reading = 10
+max_samples = 10
+
+raw_wind_data = np.append(raw_wind_data, reading)
+wind_avg = np.mean(raw_wind_data)
+
+print 'wind average =', wind_avg
+print 'wind readings used for avg =', raw_wind_data
+
+if len(raw_wind_data) == max_samples:
+    raw_wind_data = np.delete(raw_wind_data, 0)
+    
