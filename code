@@ -1,6 +1,6 @@
 import numpy as np
 
-raw_wind_data = [] #rename raw_wind_data to whatever variable wind data comes in as
+raw_wind_data = [garmin_wind] #variable wind data comes in as
 reading = 600
 max_samples = 600
 
