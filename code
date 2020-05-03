@@ -5,9 +5,9 @@ reading = 600
 max_samples = 600
 
 raw_wind_data = np.append(raw_wind_data, reading)
-wind_avg = np.mean(raw_wind_data)
+wind_avg_angle = np.mean(raw_wind_data)
 
-print 'wind average =', wind_avg
+print 'wind average angle=', wind_avg_angle
 print 'wind readings used for avg =', raw_wind_data
 
 if len(raw_wind_data) == max_samples:
